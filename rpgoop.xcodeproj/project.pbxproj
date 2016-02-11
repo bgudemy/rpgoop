@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D311E4941C6CC566003344F4 /* DevilWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311E4931C6CC566003344F4 /* DevilWizard.swift */; };
 		D3CFA5211C6A1FD50055396D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CFA5201C6A1FD50055396D /* AppDelegate.swift */; };
 		D3CFA5231C6A1FD50055396D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CFA5221C6A1FD50055396D /* ViewController.swift */; };
 		D3CFA5261C6A1FD50055396D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CFA5241C6A1FD50055396D /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D311E4931C6CC566003344F4 /* DevilWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevilWizard.swift; sourceTree = "<group>"; };
 		D3CFA51D1C6A1FD50055396D /* rpgoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rpgoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CFA5201C6A1FD50055396D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3CFA5221C6A1FD50055396D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				D3CFA5341C6ADA840055396D /* Player.swift */,
 				D3FF1BF01C6C35A400D581CE /* Enemy.swift */,
 				D3FF1BF21C6C39F200D581CE /* Kimara.swift */,
+				D311E4931C6CC566003344F4 /* DevilWizard.swift */,
 				D3CFA5201C6A1FD50055396D /* AppDelegate.swift */,
 				D3CFA5221C6A1FD50055396D /* ViewController.swift */,
 				D3CFA5241C6A1FD50055396D /* Main.storyboard */,
@@ -149,6 +152,7 @@
 			files = (
 				D3CFA5351C6ADA840055396D /* Player.swift in Sources */,
 				D3FF1BF11C6C35A400D581CE /* Enemy.swift in Sources */,
+				D311E4941C6CC566003344F4 /* DevilWizard.swift in Sources */,
 				D3FF1BF31C6C39F200D581CE /* Kimara.swift in Sources */,
 				D3CFA5331C6A21470055396D /* Character.swift in Sources */,
 				D3CFA5231C6A1FD50055396D /* ViewController.swift in Sources */,
