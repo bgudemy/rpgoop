@@ -10,16 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var printLbl: UILabel!
+    
+    @IBOutlet weak var playerLbl: UILabel!
+    
+    @IBOutlet weak var enemyLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBOutlet weak var chestBtn: UIButton!
+
+    @IBAction func onChestPressed(sender: AnyObject) {
     }
-
-
+    
 }
 
