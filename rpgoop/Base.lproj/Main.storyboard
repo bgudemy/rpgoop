@@ -130,6 +130,7 @@
                     </view>
                     <connections>
                         <outlet property="chestBtn" destination="W2O-06-kl8" id="owm-iR-lDS"/>
+                        <outlet property="enemyImg" destination="uv6-7e-htI" id="XJJ-uf-aJ5"/>
                         <outlet property="enemyLbl" destination="44x-l3-q6Y" id="uI7-8I-4ED"/>
                         <outlet property="playerLbl" destination="Mbb-7A-vUa" id="fHD-OZ-T1i"/>
                         <outlet property="printLbl" destination="hdk-dU-HEv" id="yN8-yI-wkm"/>
