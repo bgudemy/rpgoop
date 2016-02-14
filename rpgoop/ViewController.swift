@@ -47,6 +47,9 @@ class ViewController: UIViewController {
         enemyImg.hidden = false
     }
     
+    @IBAction func attackPressed(sender: AnyObject) {
+    }
+    
     @IBAction func onChestPressed(sender: AnyObject) {
     }
     
