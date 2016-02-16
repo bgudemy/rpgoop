@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        player = Player(name: "Hiphopanonymous", hp: 117, attackPwr: 21)
+        player = Player(name: "Hiphopanonymous", hp: 69, attackPwr: 21)
         
         generateRandEnemy()
         
@@ -37,28 +37,44 @@ class ViewController: UIViewController {
     }
     
     func generateRandEnemy() {
-        var rand = Int(arc4random_uniform(UInt32(2)))
+        let rand = Int(arc4random_uniform(UInt32(2)))
         
         if rand == 0 {
-            enemy = Kimara(startingHp: 100, attackPwr: 17)
+            enemy = Kimara(startingHp: 45, attackPwr: 17)
         } else {
-            enemy = DevilWizard(startingHp: 130, attackPwr: 33)
+            enemy = DevilWizard(startingHp: 77, attackPwr: 33)
         }
         enemyImg.hidden = false
     }
     
     @IBAction func attackPressed(sender: AnyObject) {
+        
+        if enemy.attemptAttack(player.attackPower) {
+            printLbl.text = "Attacked \(enemy.type) for \(player.attackPower) HP"
+            enemyLbl.text = "\(enemy.hp) HP"
+        } else {
+            printLbl.text = "Attack unsuccesful"
+        }
+        
+        if let loot = enemy.dropLoot() {
+            player.addLootToInventory(loot)
+            chestMessage = "\(player.name) scored \(loot)"
+            chestBtn.hidden = false
+        }
+        
+        if !enemy.isAlive {
+            printLbl.text = "Killed \(enemy.type)"
+            enemyLbl.text = "DEAD"
+            enemyImg.hidden = true
+        }
     }
     
     @IBAction func onChestPressed(sender: AnyObject) {
+    
+        chestBtn.hidden = true
+        printLbl.text = chestMessage
+        NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "generateRandEnemy", userInfo: nil, repeats: false)
     }
     
 }
-
-
-
-
-
-
-
 

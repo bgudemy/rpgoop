@@ -109,7 +109,7 @@
                                 </constraints>
                                 <state key="normal" image="attack"/>
                                 <connections>
-                                    <action selector="attackActoin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfI-Yo-bWS"/>
+                                    <action selector="attackPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jw0-zh-FtO"/>
                                 </connections>
                             </button>
                         </subviews>
